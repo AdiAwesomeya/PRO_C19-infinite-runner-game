@@ -92,7 +92,8 @@ function spawnMeteors() {
     var meteor = createSprite(random(0, windowWidth, 0), 0);
     meteor.addImage(meteorImg);
     meteor.scale = 0.2;
-    meteor.velocityY = 4;
+    meteor.velocityY = random(4, 15);
+    meteor.velocityX = random(-4, 4);
     meteor.lifetime = 400;
     meteor.depth = rocket.depth;
     rocket.depth = rocket.depth + 1;
